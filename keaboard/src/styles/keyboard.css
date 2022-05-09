@@ -1,7 +1,7 @@
 .keyboard {
   display: block;
-  width: auto;
-  height: 200px;
+  width: 800px;
+  height: 300px;
   border: 2px solid red;
 }
 

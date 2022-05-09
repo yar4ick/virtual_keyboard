@@ -29,6 +29,11 @@ class Keyboard {
     this.updateKeysValue();
   }
 
+  toggleLang() {
+    const newLang = this.currentLang === 'uk' ? 'en' : 'uk';
+    this.changeLang(newLang);
+  }
+
   changeCase(keyCase) {
     this.currentCase = keyCase;
     this.updateKeysValue();

@@ -31,6 +31,7 @@ function init() {
 
   document.body.addEventListener('keydown', (e) => {
     keyboard.pressKeys([e.keyCode]);
+    console.log(e);
   });
 
   document.body.addEventListener('keyup', (e) => {
@@ -88,14 +89,14 @@ function init() {
       case 'alt':
         //  17 is ctrl keycode
         if (pressedKeys.includes(17)) {
-          keyboard.changeLang(keyboard.getLang() === 'uk' ? 'en' : 'uk');
+          keyboard.toggleLang();
         }
         break;
 
       case 'ctrl':
         //  18 is alt keycode
         if (pressedKeys.includes(18)) {
-          keyboard.changeLang(keyboard.getLang() === 'uk' ? 'en' : 'uk');
+          keyboard.toggleLang();
         }
         break;
 
