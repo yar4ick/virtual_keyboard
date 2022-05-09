@@ -6,9 +6,9 @@ import Key, { KEY_STATE } from './scripts/Key';
 import Textarea from './scripts/Textarea';
 import ActiveKey from './scripts/ActiveKey';
 
-function createKey({ keyCode, type, values, position, action }) {
-  if (type === 'active-control') return new ActiveKey(keyCode, type, values, position, action);
-  return new Key(keyCode, type, values, position, action);
+function createKey({ code, type, values, position, action }) {
+  if (type === 'active-control') return new ActiveKey(code, type, values, position, action);
+  return new Key(code, type, values, position, action);
 }
 
 function createKeys(data) {
@@ -17,8 +17,8 @@ function createKeys(data) {
 
 function getButtonKeycode(e) {
   const keyButton = e.target.closest('[data-keycode]');
-  if (!keyButton) return -1;
-  const keyCode = parseInt(e.target.dataset.keycode, 10);
+  if (!keyButton) return '';
+  const keyCode = e.target.dataset.keycode;
 
   return keyCode;
 }
@@ -30,12 +30,13 @@ function init() {
   const textarea = new Textarea(textareaWrapper);
 
   document.body.addEventListener('keydown', (e) => {
-    keyboard.pressKeys([e.keyCode]);
+    keyboard.pressKeys([e.code]);
+    e.preventDefault();
     console.log(e);
   });
 
   document.body.addEventListener('keyup', (e) => {
-    keyboard.unpressKeys([e.keyCode]);
+    keyboard.unpressKeys([e.code]);
   });
 
   document.body.addEventListener('mousedown', (e) => {
@@ -87,15 +88,12 @@ function init() {
         break;
 
       case 'alt':
-        //  17 is ctrl keycode
-        if (pressedKeys.includes(17)) {
+      case 'ctrl':
+        if (pressedKeys.includes('AltLeft') && pressedKeys.includes('ControlLeft')) {
           keyboard.toggleLang();
         }
-        break;
 
-      case 'ctrl':
-        //  18 is alt keycode
-        if (pressedKeys.includes(18)) {
+        if (pressedKeys.includes('AltRight') && pressedKeys.includes('ControlRight')) {
           keyboard.toggleLang();
         }
         break;

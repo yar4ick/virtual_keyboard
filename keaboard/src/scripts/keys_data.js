@@ -1,6 +1,7 @@
 const KEYS_DATA = [
   {
     keyCode: 192,
+    code: 'Backquote',
     type: 'common',
     values: {
       en: {
@@ -17,6 +18,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 49,
+    code: 'Digit1',
     type: 'common',
     values: {
       en: {
@@ -33,6 +35,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 50,
+    code: 'Digit2',
     type: 'common',
     values: {
       en: {
@@ -49,6 +52,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 51,
+    code: 'Digit3',
     type: 'common',
     values: {
       en: {
@@ -65,6 +69,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 52,
+    code: 'Digit4',
     type: 'common',
     values: {
       en: {
@@ -81,6 +86,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 53,
+    code: 'Digit5',
     type: 'common',
     values: {
       en: {
@@ -97,6 +103,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 54,
+    code: 'Digit6',
     type: 'common',
     values: {
       en: {
@@ -113,6 +120,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 55,
+    code: 'Digit7',
     type: 'common',
     values: {
       en: {
@@ -129,6 +137,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 56,
+    code: 'Digit8',
     type: 'common',
     values: {
       en: {
@@ -145,6 +154,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 57,
+    code: 'Digit9',
     type: 'common',
     values: {
       en: {
@@ -161,6 +171,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 48,
+    code: 'Digit0',
     type: 'common',
     values: {
       en: {
@@ -177,6 +188,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 189,
+    code: 'Minus',
     type: 'common',
     values: {
       en: {
@@ -193,6 +205,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 187,
+    code: 'Equal',
     type: 'common',
     values: {
       en: {
@@ -209,6 +222,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 81,
+    code: 'KeyQ',
     type: 'common',
     values: {
       en: {
@@ -225,6 +239,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 87,
+    code: 'KeyW',
     type: 'common',
     values: {
       en: {
@@ -241,6 +256,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 69,
+    code: 'KeyE',
     type: 'common',
     values: {
       en: {
@@ -257,6 +273,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 82,
+    code: 'KeyR',
     type: 'common',
     values: {
       en: {
@@ -273,6 +290,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 84,
+    code: 'KeyT',
     type: 'common',
     values: {
       en: {
@@ -289,6 +307,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 89,
+    code: 'KeyY',
     type: 'common',
     values: {
       en: {
@@ -305,6 +324,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 85,
+    code: 'KeyU',
     type: 'common',
     values: {
       en: {
@@ -321,6 +341,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 73,
+    code: 'KeyI',
     type: 'common',
     values: {
       en: {
@@ -337,6 +358,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 79,
+    code: 'KeyO',
     type: 'common',
     values: {
       en: {
@@ -353,6 +375,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 80,
+    code: 'KeyP',
     type: 'common',
     values: {
       en: {
@@ -369,6 +392,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 219,
+    code: 'BracketLeft',
     type: 'common',
     values: {
       en: {
@@ -385,6 +409,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 221,
+    code: 'BracketRigth',
     type: 'common',
     values: {
       en: {
@@ -401,6 +426,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 220,
+    code: 'Backslash',
     type: 'common',
     values: {
       en: {
@@ -417,6 +443,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 46,
+    code: 'Delete',
     type: 'control',
     values: {
       en: {
@@ -433,6 +460,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 20,
+    code: 'CapsLock',
     type: 'active-control',
     values: {
       en: {
@@ -449,6 +477,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 65,
+    code: 'KeyA',
     type: 'common',
     values: {
       en: {
@@ -465,6 +494,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 83,
+    code: 'KeyS',
     type: 'common',
     values: {
       en: {
@@ -481,6 +511,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 68,
+    code: 'KeyD',
     type: 'common',
     values: {
       en: {
@@ -497,6 +528,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 70,
+    code: 'KeyF',
     type: 'common',
     values: {
       en: {
@@ -513,6 +545,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 71,
+    code: 'KeyG',
     type: 'common',
     values: {
       en: {
@@ -529,6 +562,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 72,
+    code: 'KeyH',
     type: 'common',
     values: {
       en: {
@@ -545,6 +579,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 74,
+    code: 'KeyJ',
     type: 'common',
     values: {
       en: {
@@ -561,6 +596,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 75,
+    code: 'KeyK',
     type: 'common',
     values: {
       en: {
@@ -577,6 +613,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 76,
+    code: 'KeyL',
     type: 'common',
     values: {
       en: {
@@ -593,6 +630,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 59,
+    code: 'Semicolon',
     type: 'common',
     values: {
       en: {
@@ -609,6 +647,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 222,
+    code: 'Quote',
     type: 'common',
     values: {
       en: {
@@ -625,6 +664,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 13,
+    code: 'Enter',
     type: 'control',
     values: {
       en: {
@@ -641,6 +681,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 16,
+    code: 'ShiftLeft',
     type: 'control',
     values: {
       en: {
@@ -657,6 +698,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 90,
+    code: 'KeyZ',
     type: 'common',
     values: {
       en: {
@@ -673,6 +715,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 88,
+    code: 'KeyX',
     type: 'common',
     values: {
       en: {
@@ -689,6 +732,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 67,
+    code: 'KeyC',
     type: 'common',
     values: {
       en: {
@@ -705,6 +749,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 86,
+    code: 'KeyV',
     type: 'common',
     values: {
       en: {
@@ -721,6 +766,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 66,
+    code: 'KeyB',
     type: 'common',
     values: {
       en: {
@@ -737,6 +783,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 78,
+    code: 'KeyN',
     type: 'common',
     values: {
       en: {
@@ -753,6 +800,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 77,
+    code: 'KeyM',
     type: 'common',
     values: {
       en: {
@@ -769,6 +817,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 188,
+    code: 'Comma',
     type: 'common',
     values: {
       en: {
@@ -785,6 +834,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 190,
+    code: 'Period',
     type: 'common',
     values: {
       en: {
@@ -801,6 +851,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 191,
+    code: 'Slash',
     type: 'common',
     values: {
       en: {
@@ -817,6 +868,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 38,
+    code: 'ArrowUp',
     type: 'control',
     values: {
       en: {
@@ -833,6 +885,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 16,
+    code: 'ShiftRight',
     type: 'control',
     values: {
       en: {
@@ -849,6 +902,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 17,
+    code: 'ControlLeft',
     type: 'control',
     values: {
       en: {
@@ -865,6 +919,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 91,
+    code: 'MetaLeft',
     type: 'control',
     values: {
       en: {
@@ -881,6 +936,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 18,
+    code: 'AltLeft',
     type: 'control',
     values: {
       en: {
@@ -897,6 +953,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 32,
+    code: 'Space',
     type: 'control',
     values: {
       en: {
@@ -911,24 +968,26 @@ const KEYS_DATA = [
     action: 'space',
     position: 58,
   },
-  // {
-  //   keyCode: 18,
-  //   type: 'control',
-  //   values: {
-  //     en: {
-  //       low: 'Alt',
-  //       up: 'Alt',
-  //     },
-  //     uk: {
-  //       low: 'Alt',
-  //       up: 'Alt',
-  //     },
-  //   },
-  //   action: 'alt',
-  //   position: 59,
-  // },
+  {
+    keyCode: 18,
+    code: 'AltRight',
+    type: 'control',
+    values: {
+      en: {
+        low: 'Alt',
+        up: 'Alt',
+      },
+      uk: {
+        low: 'Alt',
+        up: 'Alt',
+      },
+    },
+    action: 'alt',
+    position: 59,
+  },
   {
     keyCode: 37,
+    code: 'ArrowLeft',
     type: 'common',
     values: {
       en: {
@@ -945,6 +1004,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 40,
+    code: 'ArrowDown',
     type: 'common',
     values: {
       en: {
@@ -961,6 +1021,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 39,
+    code: 'ArrowRight',
     type: 'common',
     values: {
       en: {
@@ -975,27 +1036,29 @@ const KEYS_DATA = [
     action: 'add',
     position: 62,
   },
-  // {
-  //   keyCode: 17,
-  //   type: 'control',
-  //   values: {
-  //     en: {
-  //       low: 'Ctrl',
-  //       up: 'Ctrl',
-  //     },
-  //     uk: {
-  //       low: 'Ctrl',
-  //       up: 'Ctrl',
-  //     },
-  //   },
-  //   action: 'ctrl',
-  //   position: 63,
-  // },
+  {
+    keyCode: 17,
+    code: 'ControlRight',
+    type: 'control',
+    values: {
+      en: {
+        low: 'Ctrl',
+        up: 'Ctrl',
+      },
+      uk: {
+        low: 'Ctrl',
+        up: 'Ctrl',
+      },
+    },
+    action: 'ctrl',
+    position: 63,
+  },
 
   // Control Keys
 
   {
     keyCode: 8,
+    code: 'Backspace',
     type: 'control',
     values: {
       en: {
@@ -1012,6 +1075,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 9,
+    code: 'Tab',
     type: 'control',
     values: {
       en: {
