@@ -32,7 +32,6 @@ function init() {
   document.body.addEventListener('keydown', (e) => {
     keyboard.pressKeys([e.code]);
     e.preventDefault();
-    console.log(e);
   });
 
   document.body.addEventListener('keyup', (e) => {

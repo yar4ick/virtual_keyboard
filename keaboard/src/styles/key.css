@@ -14,7 +14,8 @@
   cursor: pointer;
 }
 
-.key.control {
+.key.control,
+.key.active-control {
   background-color: #b9b1b1;
 }
 

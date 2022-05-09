@@ -409,7 +409,7 @@ const KEYS_DATA = [
   },
   {
     keyCode: 221,
-    code: 'BracketRigth',
+    code: 'BracketRight',
     type: 'common',
     values: {
       en: {
@@ -957,12 +957,12 @@ const KEYS_DATA = [
     type: 'control',
     values: {
       en: {
-        low: 'Space',
-        up: 'Space',
+        low: '',
+        up: '',
       },
       uk: {
-        low: 'Space',
-        up: 'Space',
+        low: '',
+        up: '',
       },
     },
     action: 'space',
@@ -988,7 +988,7 @@ const KEYS_DATA = [
   {
     keyCode: 37,
     code: 'ArrowLeft',
-    type: 'common',
+    type: 'control',
     values: {
       en: {
         low: '◄',
@@ -1005,7 +1005,7 @@ const KEYS_DATA = [
   {
     keyCode: 40,
     code: 'ArrowDown',
-    type: 'common',
+    type: 'control',
     values: {
       en: {
         low: '▼',
@@ -1022,7 +1022,7 @@ const KEYS_DATA = [
   {
     keyCode: 39,
     code: 'ArrowRight',
-    type: 'common',
+    type: 'control',
     values: {
       en: {
         low: '►',

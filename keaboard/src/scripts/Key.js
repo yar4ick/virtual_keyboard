@@ -27,7 +27,7 @@ class Key {
   }
 
   buildHTML() {
-    const cssClass = `key ${this.state === KEY_STATE.pressed ? 'pressed' : ''} ${this.type}`;
+    const cssClass = `key ${this.state === KEY_STATE.pressed ? 'pressed' : ''} ${this.type} ${this.keyCode.toLowerCase()}`;
     return `<button class="${cssClass}" type="button" data-keycode="${this.keyCode}">${this.currentValue}</button>`;
   }
 
