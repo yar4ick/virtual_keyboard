@@ -12,7 +12,11 @@ class Textarea {
   }
 
   getCursorPosition() {
-    return { start: this.textarea.selectionStart, end: this.textarea.selectionEnd };
+    const pos = {
+      start: this.textarea.selectionStart || this.textarea.value.length,
+      end: this.textarea.selectionEnd || this.textarea.value.length,
+    };
+    return pos;
   }
 
   init() {
