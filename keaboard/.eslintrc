@@ -4,5 +4,8 @@
     "browser": true,
     "node": true,
     "jasmine": true
+  },
+  "rules": {
+    "object-curly-newline": ["error", { "multiline": true, "minProperties": 6 }]
   }
 }
