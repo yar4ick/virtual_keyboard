@@ -1,17 +1,27 @@
 import EventEmitter from './event_emitter';
 
 class Keyboard {
-  constructor(keys) {
+  constructor(keys, wrap) {
     this.keys = keys;
     this.currentLang = 'en';
     this.currentCase = 'low';
     this.EVENT_EMITTER = new EventEmitter(this);
+    this.wrap = wrap;
     this.init();
   }
 
   buildHTML() {
     const keysHTML = this.keys.map((key) => key.buildHTML());
-    return `<div class="keyboard">${keysHTML.join('')}</div>`;
+    this.wrap.innerHTML = `<div class="keyboard">${keysHTML.join('')}</div>`;
+    return this.wrap;
+  }
+
+  getCase() {
+    return this.currentCase;
+  }
+
+  getLang() {
+    return this.currentLang;
   }
 
   changeLang(lang) {
@@ -24,10 +34,16 @@ class Keyboard {
     this.updateKeysValue();
   }
 
+  toggleCase() {
+    const newCase = this.currentCase === 'low' ? 'up' : 'low';
+    this.changeCase(newCase);
+  }
+
   updateKeysValue() {
     this.keys.forEach((key) => {
       key.changeValue(this.currentLang, this.currentCase);
     });
+    this.buildHTML();
   }
 
   pressKeys(pressedKeys) {
@@ -35,6 +51,7 @@ class Keyboard {
     filteredKeys.forEach((key) => {
       key.pressKey();
     });
+    this.buildHTML();
   }
 
   unpressKeys(pressedKeys) {
@@ -42,6 +59,7 @@ class Keyboard {
     filteredKeys.forEach((key) => {
       key.unpressKey();
     });
+    this.buildHTML();
   }
 
   on(event, func) {
@@ -57,6 +75,7 @@ class Keyboard {
   }
 
   init() {
+    this.keys.sort((key1, key2) => key1.position - key2.position);
     this.keys.forEach((key) => {
       key.on('pressKey', (payload) => {
         this.dispatch('pressKey', payload);
@@ -65,6 +84,8 @@ class Keyboard {
         this.dispatch('unpressKey', payload);
       });
     });
+
+    this.buildHTML();
   }
 }
 

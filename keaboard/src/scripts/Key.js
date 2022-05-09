@@ -1,6 +1,6 @@
 import EventEmitter from './event_emitter';
 
-const KEY_STATE = {
+export const KEY_STATE = {
   default: 'default',
   pressed: 'pressed',
 };
@@ -18,7 +18,8 @@ class Key {
   }
 
   getPayload() {
-    return { value: this.currentValue, keyCode: this.keyCode, action: this.action };
+    const { currentValue: value, keyCode, action, state } = this;
+    return { value, keyCode, action, state };
   }
 
   changeValue(lang, keyCase) {
@@ -26,7 +27,7 @@ class Key {
   }
 
   buildHTML() {
-    const cssClass = `key ${this.state === KEY_STATE.pressed ? 'pressed' : ''}`;
+    const cssClass = `key ${this.state === KEY_STATE.pressed ? 'pressed' : ''} ${this.type}`;
     return `<button class="${cssClass}" type="button" data-keycode="${this.keyCode}">${this.currentValue}</button>`;
   }
 

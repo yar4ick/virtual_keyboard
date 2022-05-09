@@ -1,6 +1,6 @@
 .keyboard {
   display: block;
-  width: 700px;
+  width: auto;
   height: 200px;
   border: 2px solid red;
 }
