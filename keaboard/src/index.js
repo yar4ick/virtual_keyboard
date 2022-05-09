@@ -5,6 +5,7 @@ import Keyboard from './scripts/Keyboard';
 import Key, { KEY_STATE } from './scripts/Key';
 import Textarea from './scripts/Textarea';
 import ActiveKey from './scripts/ActiveKey';
+import BrowserStore from './scripts/BrowserStore';
 
 function createKey({ code, type, values, position, action }) {
   if (type === 'active-control') return new ActiveKey(code, type, values, position, action);
@@ -28,6 +29,9 @@ function init() {
   const keys = createKeys(KEYS_DATA);
   const keyboard = new Keyboard(keys, keyboardWrapper);
   const textarea = new Textarea(textareaWrapper);
+
+  const langFromStorage = BrowserStore.getValue('lang');
+  if (langFromStorage) keyboard.changeLang(langFromStorage);
 
   document.body.addEventListener('keydown', (e) => {
     keyboard.pressKeys([e.code]);
@@ -113,6 +117,10 @@ function init() {
       default:
         break;
     }
+  });
+
+  window.addEventListener('beforeunload', () => {
+    BrowserStore.setValue('lang', keyboard.getLang());
   });
 }
 
