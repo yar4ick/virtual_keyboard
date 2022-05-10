@@ -1,0 +1,28 @@
+.key {
+  outline: none;
+  border: none;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #cecece;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.key.control,
+.key.active-control {
+  background-color: #b9b1b1;
+}
+
+.key:hover {
+  background-color: #bababa;
+}
+
+.key.pressed {
+  background-color: #8d8c8c;
+}

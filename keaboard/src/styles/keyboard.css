@@ -1,0 +1,32 @@
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 835px;
+  border: 2px solid rgb(135, 135, 135);
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.keyboard .key {
+  margin: 2px;
+}
+
+.keyboard .key.control {
+  flex: auto;
+}
+
+.keyboard .key.space {
+  width: 338px;
+}
+
+.keyboard .key.arrowup,
+.keyboard .key.arrowdown,
+.keyboard .key.arrowleft,
+.keyboard .key.arrowright {
+  flex: none;
+}
+
+.keyboard .key.shiftleft,
+.keyboard .key.shiftright {
+  min-width: 90px;
+}
